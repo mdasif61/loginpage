@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+    <main class="md:w-7/12 w-11/12 mx-auto flex items-center justify-center h-screen">
+        <section class="bg-gray-600 flex flex-col w-[400px] rounded-xl p-10">
+            <label for="name">
+                Username :<br/>
+                <input class="w-full h-10 p-3 my-2 focus:outline-none" type="text" name="" id="userName" placeholder="name">
+            </label>
+            <label for="password">
+                Password:<br/>
+                <input class="w-full h-10 p-3 my-2 focus:outline-none" type="password" name="" id="userPass" required placeholder="password">
+            </label>
+            <label for="email">
+                Email:<br/>
+                <input class="w-full h-10 p-3 my-2 focus:outline-none" type="email" name="" id="userEmail" required placeholder="email">
+            </label>
+            <label for="phone">
+                Phone:<br/>
+                <input class="w-full h-10 p-3 my-2 focus:outline-none" type="tel" name="" id="userPhone" required placeholder="phone">
+            </label>
+            <select name="" id="userGender" class="my-4 px-2 h-10" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <textarea class="w-full resize-none my-4 p-3" name="" id="userAddress" placeholder="Your More Address" required></textarea>
+            <button id="sendBtn" class="btn btn-primary">Registration</button>
+        </section>
+    </main>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="user.js"></script>
+</body>
+</html>
